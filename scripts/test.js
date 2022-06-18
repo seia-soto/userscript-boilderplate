@@ -2,7 +2,7 @@ import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 
-const isDev = typeof process.env.DEBUG !== 'undefined';
+const isCI = typeof process.env.CI !== 'undefined';
 
 const sourceDist = path.resolve(process.cwd(), 'dist');
 
@@ -36,7 +36,7 @@ const checksum = () => {
 (() => {
 	console.time('post-check');
 
-	if (!isDev) {
+	if (isCI) {
 		findDevsToReject();
 	}
 

@@ -83,12 +83,12 @@ Refer the `scripts/build.js`, or:
   - `dist/bundle.user.js` -> `dist/bundle.user.dev.js`
   - `dist/checksum` -> `dist/checksum.dev`
 
-### `ci`
+### `test`
 
-If you want to verify the generated checksum, you can use `pnpm ci`.
-In local environment, `DEBUG=1` is specified to avoid detecting development resources.
+If you want to verify the generated checksum, you can use `pnpm test`.
+In local environment, `CI=1` is *not* specified to avoid detecting development resources.
 
-If you're going to use different ci instead of GitHub Actions (preset), please use `node scripts/ci.js` rather than `npm run ci` to avoid setting the environment variable and reduce running time by not using package manager shell.
+If you're going to use different ci instead of GitHub Actions (preset), please use `CI=1 npm run test` to include all tests ready for ci.
 
 ## cycle
 

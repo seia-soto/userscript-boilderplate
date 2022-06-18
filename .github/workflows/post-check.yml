@@ -13,4 +13,5 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: CI=1 npm run test
+      - run: npm install -g pnpm && pnpm install
+      - run: CI=1 pnpm test

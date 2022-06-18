@@ -9,8 +9,8 @@
 // @namespace   github:seia-soto
 // @homepageURL https://github.com/seia-soto
 // @supportURL  https://github.com/seia-soto/lorem-ipsum/issues
-// @updateURL   https://github.com/seia-soto/lorem-ipsum/raw/master/bundle.user.js
-// @downloadURL https://github.com/seia-soto/lorem-ipsum/raw/master/bundle.user.js
+// @updateURL   https://github.com/seia-soto/lorem-ipsum/raw/master/dist/bundle.user.js
+// @downloadURL https://github.com/seia-soto/lorem-ipsum/raw/master/dist/bundle.user.js
 //
 // @grant       unsafeWindow
 // @run-at      document-start

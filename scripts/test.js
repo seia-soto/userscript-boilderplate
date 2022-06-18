@@ -37,7 +37,11 @@ const checksum = () => {
 	console.time('post-check');
 
 	if (isCI) {
+		console.time('ci-exclusive-check');
+
 		findDevsToReject();
+
+		console.timeEnd('ci-exclusive-check');
 	}
 
 	checksum();

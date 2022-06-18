@@ -1,7 +1,7 @@
 {
   "name": "userscript",
   "description": "",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": true,
   "author": "HoJeong Go <seia@outlook.kr>",
   "license": "ISC",
